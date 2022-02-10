@@ -5,15 +5,39 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"pages/**\" \"src/**\" --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write --loglevel warn .",
+    "cypress": "cypress open"
   },
   "dependencies": {
+    "axios": "^0.25.0",
+    "classnames": "^2.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
     "next": "12.0.10",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.26.1",
+    "react-query": "^3.34.14",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
-    "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10"
+    "@next/eslint-plugin-next": "^12.0.10",
+    "autoprefixer": "^10.4.2",
+    "cypress": "^9.4.1",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-tailwindcss": "^3.4.3",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.19"
   }
 }

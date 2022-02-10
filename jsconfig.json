@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+  },
+  "include": [
+    "src",
+    "pages",
+    "styles"
+  ],
+  "exclude": [
+    "./node_modules",
+    "**/node_modules/*",
+    ".next"
+  ]
+}
